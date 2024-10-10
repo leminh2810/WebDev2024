@@ -15,7 +15,7 @@
     --flash-color:#f7f6f9;
 }
 section{
-    width: 100px;
+    width: 100%;
     display: flex;
     justify-self: space-between;
     align-items: center;
