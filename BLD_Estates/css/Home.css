@@ -1,27 +1,25 @@
-:root{
-    --primary-color: #ec5325;
-    --black-color:#000;
-    --white-stoke:#fff;
-    --pg-color:#5c727d;
-    --flash-color:#f7f6f9;
+
+.Home {
+    background-color: white;
+    position: relative;
+    padding: 10px;
 }
-.Home{
-   position: absolute;
-  ;
-}
+
 .Home_Main{
-    font-size: 48px;
-    color: #fff;
-    margin-bottom: 20px;
+   background-color: white;
+   height: 100%;
 }
-.Hero_Main h3{
-    color: white;
+
+.Home_Main h2{
+    color: black;
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-
-}
+}   
 .Home_Main h3 span{
     color: var(--primary-color);
 

@@ -1,16 +1,8 @@
-:root{
-    --primary-color: #ec5325;
-    --black-color:#000;
-    --white-stoke:#fff;
-    --pg-color:#5c727d;
-    --flash-color:#f7f6f9;
-    
-}
+
 .Services {
     text-align: center;
     padding: 20px;
-    margin-top:150%;
-    background-color: #F5F5F5;
+    background-color: var(--white-stoke);
     margin-bottom: 40px;
 }
 
@@ -31,7 +23,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-color: var(--white-stoke)  ; /* Màu nền trắng cho từng mục */
+    background-color: #F5F5F5  ; /* Màu nền trắng cho từng mục */
     padding: 20px;
     border-radius: 10px; /* Bo góc khung cho mềm mại */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Khung mờ (shadow) */

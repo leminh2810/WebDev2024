@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
@@ -20,6 +18,14 @@
     height: 200px;
     user-select: none;
 }
+body {
+    color: #333;
+    background-color: #fff;
+    min-height: 100%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
 header {
     position: fixed;
     top: 0;
@@ -32,6 +38,10 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+}
+header.sticky{
+    padding: 5px 100px;
+    background-color: var(--primary-color);
 }
 .navigation a {
     position: relative;
@@ -64,13 +74,11 @@ header {
     border: 2px solid;
     outline: none;
     border-radius: 6px;
-    border-color: tra;
     cursor: pointer;
     font-size: 1.1em;
     color: var(--white-stoke);
     font-weight: 500;
     margin-left: 40px;
-    transform: .5s;
 }
 .navigation .btnLog:hover{
     background:var(--primary-color);
@@ -111,7 +119,7 @@ header {
     background-color: transparent;
 }
 
-body {
+.bg {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -316,4 +324,93 @@ body {
     display: flex; /* Ensures the icon is centered within the button */
     align-items: center;
     justify-content: center;
+}
+
+.heading-1 {
+    color: var(--white-stoke);
+    font-weight: 600;
+    color:   #FFF5E6;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+h1 {
+    margin-top: 20px;
+    font-size: 50px;
+    line-height: 44px;
+    margin: .67em 0;
+}
+.description-container{
+    margin-top: 700px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    display: flex;
+    width: 100%;
+}
+.description-container .btnLog{
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px; 
+    border-color: tra;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #FFF5E6;
+    font-weight: 500;
+    margin-left: 40px;
+    transform: .5s;
+    backdrop-filter: blur(5px);
+}
+.description-container .btnLog:hover {
+    border-color: var(--white-stoke);
+    background-color: var(--primary-color);
+}
+
+.btnLog.wrapper{
+    position: relative;
+    transform: none;
+}
+
+.heading-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 110%;
+}
+.heading-2 strong{
+    color: var(--primary-color);
+}
+.spacer{
+    height: 8px;
+}
+.spacer172 {
+    height: 172px;
+}
+.spacer24 {
+    height: 24px;
+}
+.spacer18 {
+    height: 18px;
+}
+.spacer40{
+    height: 40px;
+    background-color: white;
+}
+.text-block-2 {
+    font-size: 18px;
+    line-height: 110%;
+}
+.spacer-6-w {
+    width: 6px;
+}
+.stars-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    size: 2px;
+}
+.star {
+    width: 24px;
 }
