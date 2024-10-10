@@ -1,0 +1,64 @@
+:root{
+    --primary-color: #ec5325;
+    --black-color:#000;
+    --white-stoke:#fff;
+    --pg-color:#5c727d;
+    --flash-color:#f7f6f9;
+}
+.Home{
+   position: absolute;
+  ;
+}
+.Home_Main{
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.Hero_Main h3{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+
+}
+.Home_Main h3 span{
+    color: var(--primary-color);
+
+}
+.search_container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid #dcdcdc;
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    flex-grow: 1; /* Ensures the input takes available space */
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-right: 10px; /* Adds space between the input and the search button */
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex; /* Ensures the icon is centered within the button */
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    width: 40px;
+    height: 40px;
+    display: block; 
+   filter: invert(0);
+}

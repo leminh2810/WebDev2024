@@ -1,0 +1,129 @@
+
+
+:root{
+    --primary-color: #ec5325;
+    --black-color:#000;
+    --white-stoke:#fff;
+    --pg-color:#5c727d;
+    --flash-color:#f7f6f9;
+    
+}
+.Footer{
+    margin-top: 10%;
+}
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px 40px;
+    font-family: Arial, sans-serif;
+    color: #666;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    
+}
+
+.footer-top {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0077cc;
+}
+
+.footer-legal {
+    margin-top: 10px;
+}
+
+.footer-legal a {
+    text-decoration: none;
+    color: #0077cc;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    
+}
+
+.menu-item {
+    margin: 0 30px;
+    text-align: center;
+    
+}
+
+
+.menu-item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.menu-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+
+.recommendations {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.recommendation-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    font-family: Arial, sans-serif;
+}
+
+.recommendation-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+.recommendation-section p {
+    font-size: 16px;
+    color: #666; /* Lighter color for the paragraph */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
