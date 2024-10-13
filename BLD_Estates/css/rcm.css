@@ -1,0 +1,77 @@
+/* Căn chỉnh toàn bộ phần recommendation */
+:root{
+    --primary-color: #e73b05;
+    --black-color:#000;
+    --white-stoke:#fff;
+    --pg-color:#5c727d;
+    --flash-color:#f7f6f9;
+}
+
+.Recommendations {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 48px 24px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Căn 2 phần về bên trái */
+    gap: 20px; /* Tạo khoảng cách giữa nội dung và hình ảnh */
+}
+
+/* Phong cách cho phần văn bản và nút */
+.description-container {
+    max-width: 500px;
+    margin-right: 0; /* Xóa margin-right để phần nội dung không đẩy xa hơn */
+    text-align: left; /* Căn chữ sang trái */
+    margin-left: 20%;
+}
+
+.description-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btnLog {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: var(--primary-color);
+}
+
+.btnLog:hover {
+    background-color: var(--white-stoke);
+    color: var(--primary-color);
+    border: var(--primary-color); /* Màu khi rê chuột vào nút */
+}
+
+/* Căn chỉnh hình ảnh nằm bên phải */
+.image-section {
+    width: 400px; /* Đặt kích thước cố định cho ảnh */
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    /* Stack layout cho màn hình nhỏ */
+    .recommendation-section {
+        flex-direction: column;
+    }
+    .image-section {
+        margin-top: 20px;
+        width: 100%;
+    }
+}

@@ -1,25 +1,27 @@
-
-.Home {
-    background-color: white;
-    position: relative;
-    padding: 10px;
+:root{
+    --primary-color: #ec5325;
+    --black-color:#000;
+    --white-stoke:#fff;
+    --pg-color:#5c727d;
+    --flash-color:#f7f6f9;
 }
-
+.Home{
+   position: absolute;
+  ;
+}
 .Home_Main{
-   background-color: white;
-   height: 100%;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
 }
-
-.Home_Main h2{
-    color: black;
+.Hme_Main h3{
+    color: white;
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}   
+
+}
 .Home_Main h3 span{
     color: var(--primary-color);
 
@@ -60,3 +62,4 @@
     display: block; 
    filter: invert(0);
 }
+

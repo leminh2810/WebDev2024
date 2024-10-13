@@ -52,7 +52,7 @@
 }
 
 .Service_title h5 {
-    font-size: 30px; /* Bạn có thể thay đổi kích thước nếu cần */
+    font-size: 50px; /* Bạn có thể thay đổi kích thước nếu cần */
     margin: 10px 0;
     color:#000;
 }
@@ -64,7 +64,7 @@
 }
 
 .span {
-    font-size: 5px;
+    font-size: 10px;
     font-size: large;
     font-weight: 300;
     color: black;
@@ -94,7 +94,7 @@
     transform: .5s;
     padding-left: 10px;
     margin-top: 25px;
-    text-align: left;
+    text-align: center;
 }
 .btn:hover {
     background-color: var(--primary-color); /* Change to this color when hovered */
