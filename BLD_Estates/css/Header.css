@@ -1,0 +1,114 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    padding: 20px 100px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+header.sticky{
+    padding: 5px 100px;
+    background-color: var(--primary-color);
+}
+header.sticky .navigation .btnLog:hover{
+    background-color: var(--white-stoke);
+    color: var(--primary-color);
+    border: var(--primary-color); 
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: var(--white-stoke);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: var(--white-stoke);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s ;
+}
+.navigation a:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+}
+.navigation .btnLog {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: var(--white-stoke);
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation .btnLog:hover{
+    background:var(--primary-color);
+    color:var(--white-stoke);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background: transparent;
+}
+.dropdown-content a {
+    color: var(--white-stoke);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-left: 0;
+    
+}
+.dropdown-content a:hover {
+    background-color: transparent;
+}
+
+header.others-header {
+    padding: 5px 100px;
+    background-color: #e73b05; 
+}
+.others-header .navigation .btnLog:hover {
+    background-color: var(--white-stoke);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.others-header .navigation .dropdown .dropdown-content {
+    background-color: var(--primary-color);
+}
+
+#services-link{
+    cursor:pointer;
+}

@@ -5,42 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/service.css">
     <link rel="stylesheet" href="./css/Footer.css">
     <link rel="stylesheet" href="./css/Home.css">
-    <link rel="stylesheet" href="./css/agents.css">
-    <link rel="stylesheet" href="./css/rcm.css">
-
+    <link rel="stylesheet" href="./css/LoginBox.css">
 </head>
 
-<body>
+<body class="Home">
     <!--Header-->
-    <header>
-        <h2 class="WebLogo">
-            <img src="img/bld-logo.png" alt="Web Logo">
-        </h2>
-        <nav class="navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <div class="dropdown">
-                <a href="#">Services</a>
-                <div class="dropdown-content">
-                    <a href="#">Buy</a>
-                    <a href="#">Sell</a>
-                    <a href="#">Rent</a>
-                </div>
-            </div>
-            <a href="#">Contact</a>
-            <button class="btnLog">Login</button>
-        </nav>
-        <script type="text/javascript">
-            window.addEventListener("scroll",function(){
-                var header =document.querySelector("header");
-                var viewportHeight = window.innerHeight;
-                header.classList.toggle("sticky",window.scrollY > viewportHeight * 0.5 );
-            });
-        </script>
-    </header>
+    <div id="header-container"></div>
+    <script src="./js/header-script.js"></script>
     <!--Background Homepage-->
     <!--Home Search Bar-->
     <section class="bg">
@@ -113,7 +86,7 @@
            <div class="search_container">
         <input type="text" placeholder="Enter an address, neighborhood, city, or ZIP code" class="search-input">
         <button class="search-button">
-            <img src="img/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Search" class="search-icon">
+            <ion-icon name="search-sharp" alt="Search" class="search-icon"></ion-icon>
         </button>
     </section>
     <!--RCM-->
@@ -129,23 +102,24 @@
     
     
     <!--Service-->
-    <section class="Services">
+    <section class="Services" id="services">
         <div class="spacer24"></div>
         <div class="Service_title Section_title">
             <h5>Our Services</h5>
         </div>
+        <div class="spacer24"></div>
         <div class="Service_Wrap">
             <div class="Service_Item">
                 <img src="img/Service_item1.png" alt="">
                 <h1>Buy a home</h1>
                 <p id="#p">Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
-                <button class="btn">See your options </button>
+                <button class="btn" id="BuyPage">See your options </button>
             </div>
             <div class="Service_Item">
                 <img src="img/Service_item3.png" alt="">
                 <h1>Sell a home</h1>
                 <p id="#p">No matter what path you take to sell your home, we can help you navigate a successful sale from listing to closing</p>
-                <button class="btn">See your options </button>
+                <button class="btn" id ="SellPage">See your options </button>
             </div>
             <div class="Service_Item">
                 <img src="img/Service_item3.png" alt="">
@@ -182,7 +156,7 @@
                     <div class ="image-content">
                         <span class="overlay"></span>
                         <div class="agent-image">
-                            <img src ="/img/puppy.jpg" alt="" class="agent-img">
+                            <img src ="./img/puppy.jpg" alt="" class="agent-img">
                         </div>
                     </div>
                     <div class="card-content">
@@ -195,7 +169,7 @@
                     <div class ="image-content">
                         <span class="overlay"></span>
                         <div class="agent-image">
-                            <img src ="/img/kitten.jpg" alt="" class="agent-img">
+                            <img src ="./img/kitten.jpg" alt="" class="agent-img">
                         </div>
                     </div>
                     <div class="card-content">
@@ -208,7 +182,7 @@
                     <div class ="image-content">
                         <span class="overlay"></span>
                         <div class="agent-image">
-                            <img src ="/img/pnv.jpg" alt="" class="agent-img">
+                            <img src ="./img/pnv.jpg" alt="" class="agent-img">
                         </div>
                     </div>
                     <div class="card-content">
