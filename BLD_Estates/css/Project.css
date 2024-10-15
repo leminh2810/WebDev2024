@@ -1,0 +1,130 @@
+:root{
+    --primary-color: #e73b05;
+    --black-color:#000;
+    --white-stoke:#fff;
+    --pg-color:#5c727d;
+    --flash-color:#f7f6f9;
+}
+.Project{
+    width: 100%;
+    height: 700px;
+    background-image: url('../img/About_image.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.Project_title{
+    color: var(--white-stoke);
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: start;
+    position: relative;
+    flex-direction: row;
+}
+.Headings h4{
+    color: var(--flash-color);
+}
+.Project_Main {
+    min-height: 80vh;
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    background-color: var(--white-stoke);
+    z-index: 99;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0,14);
+}
+
+.Project_Image {
+    height: 100%;
+    width: 50%;
+}
+
+.Project_Image img {
+    height: 415px;
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    margin-bottom: -8px;
+}
+
+.Project_Content {
+   height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--flash-color);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Project_Content .btn{
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #5c727d;
+    border-radius: 2px;
+}
+.Project_Content .btn::after{
+    content: 'Interest ?';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0%;
+    background-color: var(--primary-color);
+    transition: 0.3s;
+    z-index: 0;
+    text-align: center;
+    margin-top: 13px;
+
+
+}
+.Project_Content .btn:hover::after{
+    right: -101%;
+    color: var(--black-color);
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.Project_Slide{
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    padding: 20px;
+}
+#next_button{
+   color: var(--primary-color);
+    transition: 0.2s;
+    &:hover{
+        color: var(--white-stoke);
+        background-color: var(--primary-color);
+        margin-left: 5px;
+        border-radius: 10%;
+      
+    }
+}
+#prev_button{
+    color: var(--primary-color);
+     transition: 0.2s;
+      &:hover{
+         color: var(--white-stoke);
+        background-color: var(--primary-color);
+         margin-left: 5px;
+         border-radius: 10%;
+      }
+}
