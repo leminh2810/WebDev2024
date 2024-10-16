@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real estate website</title>
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Real estate website</title>
 </head>
-<body>
+
+<body class="about-page">
+    <!--Header-->
+    <div id="header-container"></div>
+    <script src="./js/header-script.js"></script>
+    
+    <script src="./js/script.js"></script>
+
+    </div>
+
+
+   
+    
     <div class="Facilities">
         <div class="Facilities_title Section_title">
             <h4>Building Facilities</h4>
@@ -42,177 +56,244 @@
         <div class="Facilities_Image Section_image">
             <img src="img/Facilities_image.png" alt="">
         </div>
-        <div class="Element">
-            <i class="fa-solid fa-play" id="play_btn"></i>
-        </div>
-
     </div>
-
-    <div class="Services">
-        <div class="Service_title Section_title">
-            <span class="span">
-                Our Service
-            </span>
-            <h5>Our Main Focus</h2>
+    <!-- Fast Facts Section -->
+   <!-- Section 1: Fast Facts -->
+   <section class="fast-facts">
+    <h1>Fast Facts</h1>
+    <div class="facts">
+        <div class="fact-item">
+            <h2>>160M</h2>
+            <p>homes in BLD's living database</p>
+            <p class="source">Source: VinGroup Investor page</p>
         </div>
-        <div class="Service_Wrap">
-            <div class="Service_Item">
-                <img src="img/Service_item1.png" alt="">
-                <h1>Buy A Home</h1>
-                <p id="#p">Over 1M+ options waiting for you to choose</p>
-                <button class="btn">
-                    Find A Home
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-            <div class="Service_Item">
-                <img src="img/Service_item2.png" alt="">
-                <h1>Sell A Home</h1>
-                <p id="#p">Over 1M+ options waiting for you to choose</p>
-                <button class="btn">
-                    Find A Home
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-            <div class="Service_Item">
-                <img src="img/Service_item3.png" alt="">
-                <h1>Rent A Home</h1>
-                <p id="#p">Over 1M+ options waiting for you to choose</p>
-                <button class="btn">
-                    Find A Home
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
+        <div class="fact-item">
+            <h2>>1M</h2>
+            <p>rental listings on BLD</p>
+            <p class="source">Source: BLD data</p>
+        </div>
+        <div class="fact-item">
+            <h2>214M</h2>
+            <p>average monthly unique users for 2023</p>
+            <p class="source">Source: Facebook data</p>
+        </div>
+        <div class="fact-item">
+            <h2>56%</h2>
+            <p>more time spent on BLD than the next leading real estate platform</p>
+            <p class="source">Source: Comscore data on average minutes per user per month, Q3 2023 - Dec 2023</p>
         </div>
     </div>
-    <section class="About">
-        <div class="About_title Section_title">
-            <div class="Heading">
-                <h4>Upcomming Project </h4>
-                <h2>Dream Living Space Settings New Standard</h2>
-            </div>
+</section>
 
+<!-- Section 2: Message -->
+<section class="section-message">
+    <h2>BotLil'Danh is here for you, every step of the way</h2>
+    <p>Real estate is an incredibly personal experience — and for most people, it’s the biggest transaction they’ll ever make.</p>
+    <p>BLD is built on a deep understanding of movers’ needs and a motivation to help you accomplish your moving goals. When you request to connect with an agent, Zillow works to understand your unique situation in order to connect you with a local real estate professional who can tailor their services to you, help you explore options, and be your advocate to win your next home.</p>
+    <p>That’s also why BLD provides a suite of products and services that helps most agents across the country do business more efficiently. This means agents can spend more time on what matters: helping you get home. In short, Zillow shows up for our real estate agent partners so they can better show up for you.</p>
+</section>
+
+<!-- Section 3: More Fast Facts -->
+<section class="fast-facts">
+    <h1>Fast Facts</h1>
+    <div class="facts">
+        <div class="fact-item">
+            <h2>1 in 3</h2>
+            <p>U.S. homebuyers asked to connect with a BLD Premier Agent partner in 2023</p>
+            <p class="source">Source: Youtube Group internal, January 2023 - December 2023</p>
         </div>
-        <div class="About_Main">
-            <div class="swiper About_Swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide About_Slide">
-                        <div class="About_Image Section_Image">
-                            <img src="img/About1.jpg" alt="">
-                        </div>
-                        <div class="About_Content Section_title">
-                            <h4>About Project</h4>
-                            <h2>Upcomming Project</h2>
-                            <ul class="About_List Section_List">
-                                <li>
-                                    1. Project name
-                                    <span>Sonigga</span>
-                                </li>
-                                <li>
-                                    1. Project Type
-                                    <span>Apartment/House</span>
-                                </li>
-                                <li>
-                                    1. Location
-                                    <span>Hanoi,Vietnam</span>
-                                </li>
-                                <li>
-                                    1. No of Apartment
-                                    <span>8386</span>
-                                </li>
-                                <li>
-                                    1. Total Investment
-                                    <span>18,000,000</span>
-                            
-                                </li>
-                            </ul>
-                            <button class="btn">
-                                Download Brochure
-                            </button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide About_Slide">
-                        <div class="About_Image Section_Image">
-                            <img src="img/About2.jpg" alt="">
-                        </div>
-                        <div class="About_Content Section_title">
-                            <h4>About Project</h4>
-                            <h2>Upcomming Project</h2>
-                            <ul class="About_List Section_List">
-                                <li>
-                                    1. Project name
-                                    <span>AGG</span>
-                                </li>
-                                <li>
-                                    1. Project Type
-                                    <span>Apartment/House</span>
-                                </li>
-                                <li>
-                                    1. Location
-                                    <span>Hanoi,Vietnam</span>
-                                </li>
-                                <li>
-                                    1. No of Apartment
-                                    <span>386</span>
-                                </li>
-                                <li>
-                                    1. Total Investment
-                                    <span>08,000,000</span>
-                            
-                                </li>
-                            </ul>
-                            <button class="btn">
-                                Download Brochure
-                            </button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide About_Slide">
-                        <div class="About_Image Section_Image">
-                            <img src="img/About3.jpg" alt="">
-                        </div>
-                        <div class="About_Content Section_title">
-                            <h4>About Project</h4>
-                            <h2>Upcomming Project</h2>
-                            <ul class="About_List Section_List">
-                                <li>
-                                    1. Project name
-                                    <span>CES</span>
-                                </li>
-                                <li>
-                                    1. Project Type
-                                    <span>Apartment/House</span>
-                                </li>
-                                <li>
-                                    1. Location
-                                    <span>Hanoi,Vietnam</span>
-                                </li>
-                                <li>
-                                    1. No of Apartment
-                                    <span>1000</span>
-                                </li>
-                                <li>
-                                    1. Total Investment
-                                    <span>18,000,000</span>
-                            
-                                </li>
-                            </ul>
-                            <button class="btn">
-                                Download Brochure
-                            </button>
-                        </div>
+        <div class="fact-item">
+            <h2>95%</h2>
+            <p>of BLD Premier Agent partners are rated at least 4.8 stars (out of 5)</p>
+            <p class="source">Source: Google Group Internal</p>
+        </div>
+    </div>
+</section>
 
+<!-- Section 4: Modernizing Real Estate -->
+<section class="modernizing">
+    <div class="image-text">
+       <img src="img/About2.jpg" alt="">
+        <div class="text-content">
+            <h2>Modernizing the real estate experience</h2>
+            <p>Buying and selling real estate is a difficult process to navigate, because it is fragmented and complex. Your journey from your current home to your new home includes many steps — research, shop, tour, finance, appraise, inspect, negotiate an offer, close and move — all with no central navigator.</p>
+            <p>Until now.</p>
+            <p>BLD, the housing super app, solves these real pain points by providing seamless solutions integrated within the same ecosystem. With new functionality and features continuously improving the app and site, as well as connections to great agent partners and expert loan officers at Zillow Home Loans, Zillow offers a better experience for renters, buyers and sellers.</p>
+        </div>
+    </div>
+</section>
+
+
+    <section class="Apartment_Plans">
+        <div class="Apartment_title Section_title">
+            <h4> Apartment Sketh</h4>
+            <h2>Apartment plan</h2>
+            <ul>
+                <li><span class="text">Apartment Plans</span></li>
+                <li><span class="text">Deluxe Portion</span></li>
+                <li><span class="text">Penhouse</span></li>
+                <li><span class="text">Top Garden</span></li>
+                <li><span class="text">Double height</span></li>
+            </ul>
+        </div>
+        <div class="Apartment_Main">
+            <div class="Apartment_Content Section title" >
+                <h2>The Studio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis sint hic praesentium reiciendis ipsum sed! Alias excepturi eius molestias culpa ratione ex sit recusandae, quae dicta, ipsam, accusantium aut?</p>
+                <ul class="Apartment_List Section_List">
+                    <li>
+                        Total Area
+                        <span>2800 Sq. Ft</span>
+                    </li>
+                    <li>
+                        Total Area
+                        <span>2800 Sq. Ft</span>
+                    </li>      
+                    <li>
+                        Bedroom
+                        <span>45 Sq. Ft</span>
+                    </li>
+                    <li>
+                        Balcony/Pets
+                        <span>Allowed</span>
+                    </li>
+                    <li>
+                        Lounge
+                        <span>650 Sq. Ft</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="Apartnebt_Image Section_image" >
+                <img src="img/Aparments_image.png" alt="">
+            </div>
+        </div>
+        </section>
+        <section class="Footer">
+            <div class="Footer_wrap">
+                <div class="Footer_end">
+                    <div class="FLogo">
+                        <a href="#">
+                            <i class="fa-solid fa-house-chimney">
+                                BLD estate
+                            </i>
+                        </a>
                     </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem, perspiciatis vitae obcaecati hic dicta ab corrupti eius, nesciunt ex enim natus reiciendis earum atque commodi sapiente eaque quidem? Voluptatem?</p>
+                    <ul>
+                        <li>
+                            <p>
+                                <i class="fa-solid fa-location-dot">
+                                    Hanoi, Vietnam
+                                </i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa-solid fa-phone">
+                                    0912 696 969
+                                </i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa-solid fa-envelope"> </i>
+                                 Example@gmail.com
+                            </p>
+                        </li>
+                        <li class="Icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+        
+
+                        </li>
+                    </ul>
                 </div>
-                <div class="swiper-button-next " id="next_button"></div>
-                <div class="swiper-button-prev " id="prev_button"></div>
+                <div class="Footer_end">
+                    <h4>Our Company</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                About us
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                FAQ
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Contact us
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="Footer_end">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                Login
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Promotinal offer
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Terms and Conditions
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="Footer_end">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li>
+                            <p>
+                                Login
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                My Account
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Contact
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="Footer_end">
+                    <h4>Newsletter</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quasi iure sequi aperiam unde amet, obcaecati culpa molestiae dolorum quas ut accusamus odit, in repellendus sint ab! Similique, qui molestiae.</p>
+                    <div class="Email_Box">
+                        <input type="email" id="email" placeholder="Email Address">
+                        <button class="btn">
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </button>
+                    </div>
+                    <h4>We Accept</h4>
+                    <img src="img/payment-4.png" alt="">
+                </div>
+                
+                
             </div>
-        </div>
-    </section>
+
+        </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/footer.js"></script>
+    <script src="script.js"></script>
+    <script src="js/footer.js"></script>
 
-    
+    </div>
 </body>
 </html>
