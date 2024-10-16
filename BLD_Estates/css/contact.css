@@ -3,12 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+.WebLogo{
+    color: #fff;
+    width: 200px;
+    height: 165px;
+    display: flex;
+}
 body, html {
     height: 100%;
     font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
-    background-image: url('../img/bg1.jpg');
+    background-image: url('/BLD_Estates/img/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -20,7 +26,6 @@ body, html {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     height: 50vh;
-    margin-top: 25vh; 
     padding: 50px;
     max-width: 100%;
     background-color: transparent;
@@ -39,12 +44,12 @@ body, html {
     color: #FF6F00;
     font-weight: 1000;
 }
-.content p {
+.slogan-guide {
     font-size: 18px;
-    line-height: 1.6;
-    color: white;
-    margin: 0 0 0 10px;
-    font-weight: 200;
+    line-height: 1.4;
+    color: #ffffff;
+    margin: 0 0 0 12px;
+    opacity: 0.6;
 }
 .profile {
     margin-top: 20px;
@@ -60,7 +65,7 @@ body, html {
     font-size: 16px;
     margin-left: 10px;
     margin-bottom: 30px;
-    color: white;
+    color: #ffffff;
 }
 .email-button { 
     display: absolute;  
@@ -124,19 +129,19 @@ form input, form textarea, form button {
 }
 
 input[type="text"]::placeholder, input[type=email]::placeholder, textarea::placeholder {
-    color: white; 
+    color: rgb(255, 255, 255); 
 }
 
 form input:focus, form textarea:focus {
     outline: none;
     border-color: #FF6F00;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 form input:valid, form textarea:valid {
     outline: none;
     border-color: #FF6F00;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 form button {
@@ -171,7 +176,7 @@ section{
     display: block;
 }
 .grid-container {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(12, 1fr); 
     gap: 20px;
     padding: 30px 0;
@@ -186,9 +191,10 @@ section{
 }
 
 .faq-description {
-    grid-column: 2 / span 4;
+    display: block;
+    width: 120vh;
     border-right: 1px solid white;
-    padding-right: 20px;
+    padding: 30px 20px 0 30px;
 }
 
 .faq-description h3 {
@@ -232,7 +238,8 @@ section{
     display: none; 
 }
 .FAQItem_plus-icon {
-    display: inline; 
+    display: inline;
+    margin: 0 20px 0 0;
 }
 .FAQItem a {
     display: flex;

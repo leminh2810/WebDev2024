@@ -8,20 +8,36 @@
     <link rel="icon" type="image/x-icon" href="./img/icons96.png" class="home-icon">
 </head>
 <body class="Home">
+    <header class="header__logo"> 
+        <h2 class="WebLogo">
+            <img src="img/bld-logo.png" alt="Web Logo">
+        </h2>
+    </header>
     <div id="header-container"></div>
     <script src="./js/header-script.js"></script>
     <section class="Contact_Us">
         <div class="container">
             <div class="content">
-                <h1>" Let us guide you to your dream home.</h1>
-                <p>Your dream home is within reach, just a click away. Whether you're in search of a charming apartment, a luxurious villa, or a prime commercial space—or if you're looking to sell or rent—our dedicated team is here to make it a reality. Share your aspirations with us, and together, we will craft a path to achieve your real estate goals with elegance and ease.</p>
+                <h1>Let us guide you to your dream home.</h1>
+                <p class="slogan-guide">Your dream home is within reach, just a click away. Whether you're in search of a charming apartment, a luxurious villa, or a prime commercial space—or if you're looking to sell or rent—our dedicated team is here to make it a reality. Share your aspirations with us, and together, we will craft a path to achieve your real estate goals with elegance and ease.</p>
                 <div class="profile">
                     <h3>Hello, I'm Nam. Let's explore your real estate aspirations together.</h3>
-                    <p>"Greetings, I’m Nam. It would be my pleasure to embark on a journey to explore your real estate aspirations together. With a deep commitment to understanding your unique vision and needs, I am here to guide you every step of the way. Let’s collaborate to discover the perfect property that not only fulfills your desires but also reflects your lifestyle and aspirations."</p>
-                    <a href="mailto:nduy.nghia.w@gmail.com?subject=Real%20Estate%20Inquiry&body=Hello%20Nam,%0D%0A%0D%0AI'm%20interested%20in%20discussing%20my%20real%20estate%20needs.%0D%0A%0D%0ABest%20regards," class="email-button">Email Nam directly</a>
+                    <p>Please email me with your phone number if you would like further advice.</p>
+                    <button class="email-button" onclick="openEmail()">Email Nam directly</button>
                 </div>
             </div>
-
+            
+            <script>
+            function openEmail() {
+                const email = 'namle24.usthict@gmail.com';
+                const subject = 'Real Estate Inquiry';
+                const body = 'Hello Nam,I\'m interested in discussing my real estate needs.\nBest regards,';
+                const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+                window.open(mailtoLink, '_blank'); // Mở liên kết trong tab mới
+            }
+            </script>
+            
             <div class="form-container">
                 <form>
                     <div class="form-row">
@@ -53,7 +69,9 @@
                 <h3>FAQs</h3>
                 <p>Clear answers to common questions,</p>
                 <p>providing quick and helpful information.</p>
-            </div>  
+    
+            </div>
+            <div class="company-img"></div>  
             <div class="Question">
                 <article class="FAQItem">
                     <a aria-pressed="false" role="button" tabindex="0" class="FAQItem_button">
