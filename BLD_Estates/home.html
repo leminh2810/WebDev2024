@@ -4,97 +4,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Footer.css">
+    <link rel="stylesheet" href="./css/Home.css">
+    <link rel="stylesheet" href="./css/LoginBox.css">
+    <title>BLD Estate</title>
+    <link rel="icon" type="image/x-icon" href="./img/icons96.png" class="home-icon">
 </head>
 
-<body>
-    <header>
-        <h2 class="WebLogo">
-            <img src="img/bld-logo.png" alt="Web Logo">
-        </h2>
-        <nav class="navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <div class="dropdown">
-                <a href="#">Services</a>
-                <div class="dropdown-content">
-                    <a href="#">Buy</a>
-                    <a href="#">Sell</a>
-                    <a href="#">Rent</a>
-                </div>
+<body class="Home">
+    <!--Header-->
+    <div id="header-container"></div>
+    <script src="./js/header-script.js"></script>
+    <!--Background Homepage-->
+    <!--Home Search Bar-->
+    <section class="bg">
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name ="close"></ion-icon></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Username/Email</label>
+                    </div>
+                    <div class="input-box"> 
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register here</a></p>
+                    </div>
+                </form>
             </div>
-            <a href="#">Contact</a>
-            <button class="btnLog">Login</button>
-        </nav>
-    </header>
-    <div class="wrapper">
-        <span class="icon-close"><ion-icon name ="close"></ion-icon></span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail-outline"></ion-icon>
-                    </span>
-                    <input type="text" required>
-                    <label>Username/Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                    </span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register here</a></p>
-                </div>
-            </form>
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox">I agree to the Terms & Condition</label>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login here</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
-
-        <div class="form-box register">
-            <h2>Registration</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="person"></ion-icon>
-                    </span>
-                    <input type="text" required>
-                    <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail-outline"></ion-icon>
-                    </span>
-                    <input type="text" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                    </span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember">
-                    <label><input type="checkbox">I agree to the Terms & Condition</label>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Already have an account? <a href="#" class="login-link">Login here</a></p>
-                </div>
-            </form>
+        <div class="Home_Main">
+            <h3> Find Your <span> Perfect</span> Home
+            </h3>
+           <div class="search_container">
+        <input type="text" placeholder="Enter an address, neighborhood, city, or ZIP code" class="search-input">
+        <button class="search-button">
+            <ion-icon name="search-sharp" alt="Search" class="search-icon"></ion-icon>
+        </button>
+    </section>
+    <!--RCM-->
+    <div class="Recommendations">
+        <div class="description-container">
+            <h1>Find Your Dream Home, Where Every Journey Begins!</h1>
+            <button class="btnLog">Let's Start</button>
+        </div>
+        <div class="image-section">
+            <img src="img/house.webp" alt="House Image">
         </div>
     </div>
     
-    <script src="js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!--Service-->
+    <section class="Services" id="services">
+        <div class="spacer24"></div>
+        <div class="Service_title Section_title">
+            <h5>Our Services</h5>
+        </div>
+        <div class="spacer24"></div>
+        <div class="Service_Wrap">
+            <div class="Service_Item">
+                <img src="img/Service_item1.png" alt="">
+                <h1>Buy a home</h1>
+                <p id="#p">Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
+                <button class="btn" id="BuyPage">See your options </button>
+            </div>
+            <div class="Service_Item">
+                <img src="img/Service_item3.png" alt="">
+                <h1>Sell a home</h1>
+                <p id="#p">No matter what path you take to sell your home, we can help you navigate a successful sale from listing to closing</p>
+                <button class="btn" id ="SellPage">See your options </button>
+            </div>
+            <div class="Service_Item">
+                <img src="img/Service_item3.png" alt="">
+                <h1>Rent a home</h1>
+                <p id="#p">We’re creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent</p>
+                <button class="btn" id="RentPage">See your options </button>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--Agents-->
+    <section class="community">
+        <div class="spacer24"></div>
+        <h2 class="heading-2">Loved by the <strong>Community</strong></h2>
+        <div class="spacer18"></div>
+        <div class="text-block-2">Help us by rating <strong>5 stars</strong> on your favourite agent. </div>
+        <div class="spacer18"></div>
+        <div class="stars-container">
+            <img src="https://cdn.prod.website-files.com/657eb0b984117f80c2a136d6/65bb272b677f0f4790fa792a_star.webp" loading="lazy" alt="" class="star">
+            <div class="spacer-6-w"></div>
+            <img src="https://cdn.prod.website-files.com/657eb0b984117f80c2a136d6/65bb272b677f0f4790fa792a_star.webp" loading="lazy" alt="" class="star">
+            <div class="spacer-6-w"></div>
+            <img src="https://cdn.prod.website-files.com/657eb0b984117f80c2a136d6/65bb272b677f0f4790fa792a_star.webp" loading="lazy" alt="" class="star">
+            <div class="spacer-6-w"></div>
+            <img src="https://cdn.prod.website-files.com/657eb0b984117f80c2a136d6/65bb272b677f0f4790fa792a_star.webp" loading="lazy" alt="" class="star">
+            <div class="spacer-6-w"></div>
+            <img src="https://cdn.prod.website-files.com/657eb0b984117f80c2a136d6/65bb272b677f0f4790fa792a_star.webp" loading="lazy" alt="" class="star">
+        </div>
+        <div class="spacer18"></div>    
+    </section>
+    <section class="Agents">
+        <div class="slide-content">
+                <div class="card">
+                    <div class ="image-content">
+                        <span class="overlay"></span>
+                        <div class="agent-image">
+                            <img src ="./img/puppy.jpg" alt="" class="agent-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Doggie</h2>
+                        <p class="description">The World's best real estate sales dog</p>
+                        <button class="agent-btn">View More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class ="image-content">
+                        <span class="overlay"></span>
+                        <div class="agent-image">
+                            <img src ="./img/kitten.jpg" alt="" class="agent-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Kitty</h2>
+                        <p class="description">The World's best real estate sales cat</p>
+                        <button class="agent-btn">View More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class ="image-content">
+                        <span class="overlay"></span>
+                        <div class="agent-image">
+                            <img src ="./img/pnv.jpg" alt="" class="agent-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Vuong Pham Nhat</h2>
+                        <p class="description">Vietnamese's best real estate sales</p>
+                        <button class="agent-btn">View More</button>
+                    </div>
+                </div>
+        </div>
+    </section>
+    
+    <!--Footer-->
+    <section class="Footer">
+        <div class="recommendation-section">
+            <h3>About BLD's Recommendations</h3>
+            <p>
+                Recommendations are based on your location and search activity, such as the homes you've viewed and saved and the filters you've used. We use this information to bring similar homes to your attention, so you don't miss out.
+            </p>
+        </div>
+    
+        <div class="menu">
+            <div class="menu-item">
+                <a href="#">Real Estate</a>
+                
+            </div>
+            <div class="menu-item">
+                <a href="#">Rentals</a>
+                
+            </div>
+            <div class="menu-item">
+                <a href="#">Mortgage Rates</a>
+                
+            </div>
+            <div class="menu-item">
+                <a href="#">Browse Homes</a>
+        
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Zestimates</a>
+                    <a href="#">Research</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Vietnam Privacy Notice</a>
+                    <a href="#">Portugal Privacy Notice</a>
+                    <a href="#">Help</a>
+                    <a href="#">Advertise</a>
+                    <a href="#">Fair Housing Guide</a>
+                    <a href="#">Advocacy</a>
+                    <a href="#">Terms of use</a>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Do Not Sell or Share My Personal Information</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Zillow Group is committed to ensuring digital accessibility for individuals with disabilities...</p>
+                <p>Zillow, Inc. holds real estate brokerage licenses in multiple states...</p>
+                <a href="#">Contact BotLil'Danh for more</a>
+            </div>
+        </footer>
+    </section>
+
+
+   <!--JS script/Icon module-->
+   <script src="./js/script.js"></script> 
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

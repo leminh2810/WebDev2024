@@ -3,18 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-.WebLogo{
-    color: #fff;
-    width: 200px;
-    height: 165px;
-    display: flex;
-}
 body, html {
     height: 100%;
-    font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
-    background-image: url('/BLD_Estates/img/bg.jpg');
+    background-image: url('../img/bg1.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -26,6 +19,7 @@ body, html {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     height: 50vh;
+    margin-top: 25vh; 
     padding: 50px;
     max-width: 100%;
     background-color: transparent;
@@ -44,12 +38,12 @@ body, html {
     color: #FF6F00;
     font-weight: 1000;
 }
-.slogan-guide {
+.content p {
     font-size: 18px;
-    line-height: 1.4;
-    color: #ffffff;
-    margin: 0 0 0 12px;
-    opacity: 0.6;
+    line-height: 1.6;
+    color: white;
+    margin: 0 0 0 10px;
+    font-weight: 200;
 }
 .profile {
     margin-top: 20px;
@@ -61,11 +55,16 @@ body, html {
     font-weight: 700;
     margin-bottom: 10px;
 }
+
+.note{
+    font-weight: 300 !important;
+}
+
 .profile p {
     font-size: 16px;
     margin-left: 10px;
     margin-bottom: 30px;
-    color: #ffffff;
+    color: white;
 }
 .email-button { 
     display: absolute;  
@@ -129,19 +128,19 @@ form input, form textarea, form button {
 }
 
 input[type="text"]::placeholder, input[type=email]::placeholder, textarea::placeholder {
-    color: rgb(255, 255, 255); 
+    color: white; 
 }
 
 form input:focus, form textarea:focus {
     outline: none;
     border-color: #FF6F00;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 form input:valid, form textarea:valid {
     outline: none;
     border-color: #FF6F00;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 form button {
@@ -176,7 +175,7 @@ section{
     display: block;
 }
 .grid-container {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(12, 1fr); 
     gap: 20px;
     padding: 30px 0;
@@ -191,10 +190,9 @@ section{
 }
 
 .faq-description {
-    display: block;
-    width: 120vh;
+    grid-column: 2 / span 4;
     border-right: 1px solid white;
-    padding: 30px 20px 0 30px;
+    padding-right: 20px;
 }
 
 .faq-description h3 {
@@ -236,10 +234,11 @@ section{
 }
 .FAQItem_minus-icon {
     display: none; 
+    margin: 0 30px 0 0; 
 }
 .FAQItem_plus-icon {
     display: inline;
-    margin: 0 20px 0 0;
+    margin: 0 30px 0 0; 
 }
 .FAQItem a {
     display: flex;
