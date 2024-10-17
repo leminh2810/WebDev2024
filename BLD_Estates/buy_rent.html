@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLD Estate</title>
+    <link rel="icon" type="image/x-icon" href="./img/icons96.png" class="home-icon">
+    <link rel="stylesheet" href="./css/buy_rent.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <script src="./js/header-script.js"></script>
+    <section class="search-bar">
+        <input type="text" placeholder="Address, neighborhood, city, ZIP">
+        <select id="transactionType" onchange="selectOption(this.value)">
+            <option value="For Sale">For Sale</option>
+            <option value="For Rent">For Rent</option>
+        </select>
+        <select>
+            <option>Price</option>
+        </select>
+        <select>
+            <option>Beds & Baths</option>
+        </select>
+        <select>
+            <option>Home Type</option>
+        </select>
+        <select>
+            <option>More</option>
+        </select>
+        <button class="save-btn">Save search</button>
+    </section>
+    <section class="map-listings-container">
+        <div class="map-section">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.9826724215227!2d105.8659616747135!3d20.993331688995536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac1b37f15f39%3A0xa1caa9bd661382b1!2zVGltZXMgQ2l0eSBUMTEsIEtodSDEkcO0IHRo4buLIFRpbWVzIENpdHksIFbEqW5oIFR1eSwgSG_DoG5nIE1haSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1728920303052!5m2!1svi!2s" 
+                width="900" 
+                height="600" 
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen="" 
+                aria-hidden="false" 
+                tabindex="0">
+            </iframe>
+        </div>
+
+    <!-- Listings Section -->
+        <div class="listings-section">
+            <div class="listings-header">
+                <h2>Real Estate & Homes For Sale</h2>
+                <span>465,981 results</span>
+                <span class="sort-option">Sort: Homes for You</span>
+            </div>
+
+            <div class="listings">
+                <div class="listing-card">
+                    <img src="../img/property1.png" alt="House 1" class="clickable-image" onclick="toggleInfo(1)">
+                    <div class="listing-info">
+                        <span class="tag">Cozy fireplace</span>
+                        <h3>$390,000</h3>
+                        <p>4 bds | 3 ba | 2,276 sqft - House for sale</p>
+                        <p>1182 Parkwood Trce, Stone Mountain, GA 30083</p>     
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="../img/property2.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                    <div class="listing-info">
+                        <span class="tag">Low maintenance artificial grass</span>
+                        <h3>$320,000</h3>
+                        <p>3 bds | 2 ba | 1,600 sqft - House for sale</p>
+                        <p>456 Oakwood Ave, Phoenix, AZ 85008</p>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="../img/property3.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                    <div class="listing-info">
+                        <span class="tag">Low maintenance artificial grass</span>
+                        <h3>$320,000</h3>
+                        <p>3 bds | 2 ba | 1,600 sqft - House for sale</p>
+                        <p>456 Oakwood Ave, Phoenix, AZ 85008</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script> 
+</body>
+</html>

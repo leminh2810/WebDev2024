@@ -1,17 +1,203 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Tổng quan cho toàn bộ phần Facilities */
+.Facilities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    padding-top: 7%;
+    
+}
 
-* {
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+/* Tiêu đề phần Facilities */
+.Facilities_title {
+    max-width: 50%;
+}
+
+.Facilities_title h4 {
+    color: #ff5959;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.Facilities_title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Facilities_title p {
+    font-size: 16px;
+    color: #6c6c6c;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+
+/* Phần danh sách tính năng (ul, li) */
+.list_item{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-content: center;
+    place-items: center;
+    gap: 40px;
+    padding: 20px 0 ;
+   
+    
+}
+.list_item li{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.list_item li i{
+    min-height: 50px;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f5dfcd;
+   
+}
+
+.list_item p {
+    font-size: 16px;
+    color: #333;
+
+
+}
+
+/* Hình ảnh bên phải */
+.Facilities_Image {
+    max-width: 45%;
+}
+
+.Facilities_Image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+body {
+   
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: var(--black-color);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fast-facts {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.facts {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.fact-item {
+    max-width: 300px;
+}
+
+.fact-item h2 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fact-item p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.source {
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 10px;
+}
+
+.section-message {
+    
+    text-align: center;
+    font-size: medium;
+    justify-items: center;
+    background-color: var(--flash-color);
+    
+}
+
+.section-message h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--black-color);
+   
+}
+
+.section-message p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+}
+
+.modernizing {
+    padding: 50px 20px;
+    background-color: var(--flash-color);
+}
+
+.image-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-text img {
+    max-width: 45%;
+    border-radius: 8px;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
 }
 
 section{
-    width: 100px;
+    width: 100%;
     display: flex;
     justify-self: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 120px 10%; 
     gap: 60px;
 }
 .Section_title{
@@ -51,7 +237,7 @@ section{
 }
 .Section_image{
     height: 100%;
-    width: 50px;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,527 +262,117 @@ section{
     font-size: 0.8rem;
     color: var(--pg-color);
 }
-
-
-
-
-
-.Facilities{
+.Apartment_Plans{
+    padding-top: 10%;
+}
+.Apartment_title ul{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    margin: 120px 0;
-    background-color: var(--flash-color);
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+}
+.Apartment_title ul li{
     position: relative;
-}
-.Facilities_title{
-    width: 50%;
-    height: 100%;
-    text-align: start;
-    align-items: start;
-    padding: 30px 0;
-    padding-left: 10%;
-    padding-right: 2%;
-}
-.list_item{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    place-content: center;
-    place-items: center;
-    gap: 30px;
-}
-.list_item li{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-}
-.list_item li i{
-    min-height: 50px;
-    min-width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: #f5dfcd;
-}
-.Facilities_Image{
-    width: 50%;
-}
-.Facilities_Image img{
-    width: 100%;
-    object-fit: cover;
-}
-.Element{
-    height: 70px;
-    width: 70px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 53%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: plus_Anim 1s infinite;
-}
-.Element #play_btn{
-    font-size: 1.6em;
-    color: var(--white-stoke);
-}
-
-
-nav{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background-color: var(--white-stoke);
-}
-.logo{
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    font-size: 3rem;
-}
-.logo a{
-    color: var(--primary-color);
-    font-size: 1rem;
-}
-.logo i{
-    color:#c54949
-
-}
-.menu{
-    display: flex ;
-    align-items: center;
-    gap: 30px;
-
-}
-.menu li a:hover{
-    color: var(--primary-color);
-}
-#toggle{
-    font-size: 1.5rem;
-    background-color: var(--primary-color);
-    color: var(--white-stoke);
-    padding: 8px 16px;
-    display: none;
-}
-.Hero{
-    background-size: cover;
-    background-image: url(/img/ppbd.jpg); 
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 80px;
-}
-.Hero_Main{
-    font-size: 48px;
-    color: #fff;
-    margin-bottom: 20px;
-}
-.Hero_Main h3{
-    color: white;
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-
-}
-.Hero_Main h3 span{
-    color: var(--primary-color);
-
-}
-
-
-.Hero_btns{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    
-
-}
-.Hero_btns .btn{
-    text-transform: uppercase;
-    font-size: 1rem;
-    gap: 10px;
-    border-radius: 10%;
-    size: 500;
-    &:hover{
-        color: var(--white-stoke);
-        background-color: var(--primary-color);
-
-    }
-}
-.Hero_btns .btn:nth-child(2){
-    background-color: var(--flash-color);
-    color: var(--black-color);
-}
-.search_container {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    background-color: white;
-    border-radius: 25px;
-    border: 2px solid #dcdcdc;
-    margin-top: 10px;
-    padding: 5px;
-    
-}
-
-.search-input {
-    border: none;
-    outline: none;
-    flex-grow: 1; /* Ensures the input takes available space */
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 25px;
-    margin-right: 10px; /* Adds space between the input and the search button */
-}
-
-.search-button {
-    background-color: transparent;
-    border: none;
     cursor: pointer;
-    display: flex; /* Ensures the icon is centered within the button */
-    align-items: center;
-    justify-content: center;
+    transition: 0.4s;
 }
-
-.search-icon {
-    width: 40px;
-    height: 40px;
-    display: block; 
-   filter: invert(0);
+.Apartment_title ul li :nth-child(i){
+    color: var(--primary-color);
 }
-
-.Services {
-    text-align: center;
-    padding: 50px;
-    background-color: #f5dfcd;
-    margin-top: 10px;
+.Apartment_title ul li:hover{
+    color: var(--primary-color);
 }
-
-.Service_Wrap {
-   width: 100%;
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   place-content: center;
-   place-items: center;
-   gap: 30px;
-}
-.Service_Item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: #fff; /* Màu nền trắng cho từng mục */
-    padding: 20px;
-    border-radius: 10px; /* Bo góc khung cho mềm mại */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Khung mờ (shadow) */
-    transition: all 0.3s ease-in-out; /* Hiệu ứng khi di chuột vào */
-    text-align: center; 
-    padding: 30px;
-    position: relative;
-
-}
-.Service_Item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tăng độ mờ khi hover */
-    transform: translateY(-5px);
-}
-
-.Service_Item img {
-    width: 100px;
-    height: auto;
-}
-
-
-.btn i {
-    margin-left: 5px;
-}
-.Service_title {
-    text-align: center; 
-    margin: 0 auto; /* Đảm bảo phần tử nằm giữa với các khoảng cách đều nhau */
-    width: 100%; /* Đặt độ rộng của phần tử để phủ toàn bộ chiều ngang */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Service_title h5 {
-    font-size: 45px; /* Bạn có thể thay đổi kích thước nếu cần */
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.span {
-    font-size: 50px; /* Đặt kích thước chữ cho span "Our Service" */
-    background-color: #f2d6d6; /* Đặt màu nền nếu cần */
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-.Service_Item button{
-    background-color: transparent;
-    border: none;
-    color: #8cb2b2;
-    height: 30px;
-    width: 100px;
-    font-size: 0.9rem;
-    gap: 8px;
-    display: inline-block;
-}
-
-.About{
-    width: 100%;
-    height: 700px;
-    background-image: url(/img/About_image.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.About_title{
-    color: var(--white-stoke);
-    width: 100%;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: start;
-    position: relative;
-    flex-direction: row;
-}
-.About_title .Heading{
-    width: 50%;
-}
-.Heading h4{
-    color: var(--white-stoke);
-}
-.About_Main{
-    min-height: 80vh;
+.Apartment_title ul li ::after{
+    content: '';
     position: absolute;
-    top: 50%;
-    width: 80%;
-    background-color: var(--white-stoke);
-    z-index: 99;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0,14);
+    height: 8px;
+    width: 8px;
+    border-radius:50% ;
+    top: 90%;
+    left: 45%;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    opacity: 0;
 }
-.About_Image{
-    height: 100%;
-    width: 50%;
+.Apartment_title ul li :hover ::before{
+    opacity: 1;
+
 }
-.About_Image img{
-    height: 415px;
-    object-fit: cover;
+.Apartment_title ul li :hover ::after{
+    opacity: 1;
+}
+.Apartment_title ul li :before{
+    content: '';
+    position: absolute;
+    height: 2px;
     width: 100%;
-    position: relative;
-    margin-bottom: -8px;
-    ;
+    top: 100%;
+    left: 0%;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    opacity: 0;
+
+
 }
-.About_Content{
-    height: 100%;
-    width: 50%;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: var(--flash-color);
-    padding: 30px;
+.Apartment_Main{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
 }
-.About_Content .btn{
-    width: 200px;
+.Apartment_Content{
+    width: 60%;
+    align-items: start;
+    text-align: left;
+    padding: 50px;
+    background-color: var(--flash-color);
+}
+.Apartment_List {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.Apartment_List li{
+    font-weight: 400 !important;
+    font-size: 0.9rem;
     position: relative;
     overflow: hidden;
-    border: 1px solid #5c727d;
-    border-radius: 2px;
+    align-items: flex-start;
+    
 }
-.About_Content .btn::after{
-    content: 'Interest ?';
+.Apartment_List li::before{
     position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0%;
-    background-color: var(--primary-color);
-    transition: 0.3s;
+    content: '';
+    width: 61%;
+    height: 0.5px;
+    top: 50%;
+    left: 21%;
+    border: 1px dashed;
+    background-color: #8cb2b2;
     z-index: 0;
-    text-align: center;
-    margin-top: 13px;
-
-
 }
-.About_Content .btn:hover::after{
-    right: -101%;
-    color: var(--black-color);
-}
-
-.swiper{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-
-}
-.About_Slide{
-    width: 100% !important;
-    height: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center;
-    padding: 20px;
-}
-#next_button{
-   color: var(--primary-color);
-    transition: 0.2s;
-    &:hover{
-        color: var(--white-stoke);
-        background-color: var(--primary-color);
-        margin-left: 5px;
-        border-radius: 10%;
-      
-    }
-}
-#prev_button{
-    color: var(--primary-color);
-     transition: 0.2s;
-      &:hover{
-         color: var(--white-stoke);
-        background-color: var(--primary-color);
-         margin-left: 5px;
-         border-radius: 10%;
-      }
-}
-.Footer{
-    width: 100%;background-color: #171b2a;
-    padding: 100px 40px;
-    margin-bottom: 0 !important;
-    margin-top: 20%;
-}
-.Footer_wrap{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 30px;
-}
-.Footer_end{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
-    flex-direction: column;
-    gap: 10%;
-    color: var(--white-stoke);
-
-}
-.Footer_end:nth-child(2){
-    width: 60%;
-}
-.Footer_end:nth-child(3){
-    width: 60%;
-}
-.Footer_end:nth-child(4){
-    width: 60%;
-}
-.FLogo{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
-    font-size: 1.5rem;
-
-}
-.FLogo a{
-    color: var(--white-stoke);
-    font-weight: 500;
-}
-.Icon{
-    width: 100%;
-    display: flex;
+.message-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    height: 100vh;
+    max-width: 100%;
     gap: 20px;
 }
-.Icon i {
-    font-size: 1rem;
-    color: var(--primary-color);
+.message-container .message-pic {
+    grid-column: 1 / span 8;
+    background-image: url('../img/Success.JPEG');
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
 
 }
-.Icon i:hover{
-    color: var(--primary-color);
-
-}
-.Footer_end h4{
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: var(--white-stoke);
-
-}
-.Footer_end ul{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    word-spacing: 20%;
-    
-    
-}
-.Footer_end p{
-    color: var(--white-stoke);
-    letter-spacing: 0.5px;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    font-weight: 400;
-    transition: .4s;
-}
-.Footer_end .Email_Box{
-    width: 10%;
-    display: flex;
-    align-items: start;
-    justify-content: flex-start;
-    position: relative;
-}
-.Email_Box input{
-    width: 100%;
-    padding: 18px;
-    border: none;
-    outline: none;
-    position: relative;
-    background-color: var(--white-stoke);
-}   
-.email_Box button{
-    position: absolute;
-    height: 100%;
-    right: 3px;
-    width: 80px;
-    font-style: 14px;
-    top:0%
-}
-.Footer_end img{
-    width: 90%;
-
+.message-container .section-message{
+    grid-column: 9 /span 12;
+    height: 100vh;
+    max-width: 100%;
 }

@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.search-bar {
+  display: block;
+  max-width: 100%;
+  background-color: var(--white-stoke);
+  padding: 10px;
+  margin-top: 10vh;  
+  border-top: 2px  solid #ccc ;
+  border-bottom: 2px  solid #ccc ;
+  padding-left: 20px;
+  height: 8vh;
+}
+
+.search-bar input,
+.search-bar select,
+.search-bar button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  width: 40%;
+  
+}
+
+.search-bar select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.map-listings-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 82vh; 
+}
+
+.map-section {
+    flex: 1; 
+    height: 100%; 
+    min-width: 0; 
+}
+
+.map-section iframe {
+    width: 100%; 
+    height: 100%; 
+    border: 0;
+}
+
+
+.listings-section {
+    width: 50%;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow:rgba(0, 0, 0, 0.4) -2px 2px 5px 0px;
+}
+.listings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+.sort-option {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+.listings {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+.listing-card {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+.listing-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+.listing-info {
+    flex-grow: 1;
+  }
+  
+.listing-info .tag {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+h3 {
+    margin: 0;
+    color: #333;
+  }
