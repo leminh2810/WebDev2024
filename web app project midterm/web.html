@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="header-container"></div>
+    <script src="./js/header-script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <div class="header-container">
+        <input type="text" placeholder="Address, neighborhood, city, ZIP">
+        <select>
+            <option>For Sale</option>
+        </select>
+        <select>
+            <option>Price</option>
+        </select>
+        <select>
+            <option>Beds & Baths</option>
+        </select>
+        <select>
+            <option>Home Type</option>
+        </select>
+        <select>
+            <option>More</option>
+        </select>
+        <button class="save-btn">Save search</button>
+    </div>
+</header>
+<body>
+    
+
+<div class="container">
+    <!-- Map Section -->
+    <div class="map-section">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1107.2196914240176!2d105.79165258606423!3d21.023550152315334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1729175043445!5m2!1svi!2s"
+            width="900" 
+            height="600" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen="" 
+            aria-hidden="false" 
+            tabindex="0">
+        </iframe>
+    </div>
+
+    <!-- Listings Section -->
+    <div class="listings-section">
+        <div class="listings-header">
+            <h2>Real Estate & Homes For Sale</h2>
+            <span>465,981 results</span>
+            <span class="sort-option">Sort: Homes for You</span>
+        </div>
+
+        <div class="listings">
+            <div class="listing-card">
+                <img src="2.png" alt="House 1" class="clickable-image" onclick="toggleInfo(1)">
+                <div class="listing-info">
+                    <span class="tag">1 tiếng trước</span>
+                    <h3>4 TỶ</h3>
+                    <p>80m2 - 3 phòng ngủ </p>
+                    <p>Số nhà 63, Phố Dương Đình Nghệ, Phường Yên Hòa, Cầu Giấy, Hà Nội</p>                    
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <img src="1.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                <div class="listing-info">
+                    <span class="tag">2 tiếng trước</span>
+                    <h3>5 TỶ</h3>
+                    <p>65m2 - 4 phòng ngủ</p>
+                    <p>Số nhà 94 ngõ 224, Phố Trung Kính, Phường Yên Hòa, Cầu Giấy, Hà Nội</p>                    
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <img src="3.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                <div class="listing-info">
+                    <span class="tag">2 tiếng trước</span>
+                    <h3>4 TỶ 5 </h3>
+                    <p>85m2 - 3 phòng ngủ </p>
+                    <p>Số nhà 29, Phố Dương Đình Nghệ, Phường Yên Hòa, Cầu Giấy, Hà Nội</p>                   
+                </div>
+            </div>
+            <div class="listing-card">
+                <img src="4.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                <div class="listing-info">
+                    <span class="tag">3 tiếng trước</span>
+                    <h3>5 TỶ 5 </h3>
+                    <p>105m2 - 4 phòng ngủ </p>
+                    <p>Số nhà 142 ngõ 224, Phố Trung Kính, Phường Yên Hòa, Cầu Giấy, Hà Nội</p>                   
+                </div>
+            </div>
+            <div class="listing-card">
+                <img src="5.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                <div class="listing-info">
+                    <span class="tag">3 tiếng trước</span>
+                    <h3>3 TỶ 5 </h3>
+                    <p>70m2 - 2 phòng ngủ </p>
+                    <p>Số nhà 78 ngõ 224, Phố Trung Kính, Phường Yên Hòa, Cầu Giấy, Hà Nội</p>
+
+                </div>
+            </div>
+            <div class="listing-card">
+                <img src="6.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                <div class="listing-info">
+                    <span class="tag">3 tiếng trước</span>
+                    <h3>3 TỶ 9 </h3>
+                    <p>76m2 - 2 phòng ngủ </p>
+                    <p>Số nhà 16, Phố Dương Đình Nghệ, Phường Yên Hòa, Cầu Giấy, Hà Nội</p>
+                    
+                </div>
+            </div>
+            <div class="listing-card">
+                <img src="7.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                <div class="listing-info">
+                    <span class="tag">4 tiếng trước</span>
+                    <h3>5 TỶ 7 </h3>
+                    <p>100m2 - 5 phòng ngủ </p>
+                    <p>Số nhà 52 ngõ 232, Phố Yên Hòa, Phường Yên Hòa, Cầu Giấy, Hà Nội</p>   
+                </div>
+            </div>
+            <div class="listing-card">
+                <img src="8.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                <div class="listing-info">
+                    <span class="tag">5 tiếng trước</span>
+                    <h3>7 TỶ 8 </h3>
+                    <p>120m2 - 6 phòng ngủ </p>
+                    <p>Số nhà 132 ngõ 232, Phố Yên Hòa, Phường Yên Hòa, Cầu Giấy, Hà Nội</p>   
+                </div>
+            </div>
+            <div class="listing-card">
+                <img src="9.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                <div class="listing-info">
+                    <span class="tag">5 tiếng trước</span>
+                    <h3>5 TỶ 8 </h3>
+                    <p>100m2 - 4 phòng ngủ </p>
+                    <p>Số nhà 78 ngõ 192, Phố Yên Hòa, Phường Yên Hòa, Cầu Giấy, Hà Nội</p>  
+                </div>
+            </div>
+            <div class="listing-card">
+                <img src="10.png" alt="House 3" class="clickable-image" onclick="toggleInfo(1)">
+                <div class="listing-info">
+                    <span class="tag">6 tiếng trước</span>
+                    <h3>7 TỶ 8 </h3>
+                    <p>130m2 - 6 phòng ngủ </p>
+                    <p>Số nhà 17 ngõ 186, Phố Hoa Bằng, Phường Yên Hòa, Cầu Giấy, Hà Nội</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
