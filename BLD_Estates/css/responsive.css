@@ -1,0 +1,171 @@
+/* Style cho desktop */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#main-header {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.WebLogo{
+    height: 150px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #e73b05;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #e73b05;
+}
+
+.btnLog {
+    background-color: #e73b05;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnLog:hover {
+    background-color: var(--white-stoke);
+    color: var(--primary-color);
+    border: var(--primary-color);
+}
+
+/* Responsive cho màn hình nhỏ hơn 768px (tablet trở xuống) */
+@media (max-width: 810px) {
+    .menu-toggle {
+        display: block; /* Hiển thị nút toggle khi màn hình nhỏ */
+        font-size: 32px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .navigation {
+        display: none; /* Ẩn menu điều hướng mặc định */
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: left;
+        padding: 20px 0;
+    }
+
+    /* Hiển thị menu khi nhấn vào nút toggle */
+    .navigation.active {
+        display: inline-block;
+        background-color: inherit;
+    }
+
+    .navigation a {
+        padding: 15px 0;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        background-color: #444;
+    }
+
+    .dropdown-content a {
+        padding: 10px;
+    }
+
+    .Home_Main {
+        line-height: 65px;
+        margin: 10px;
+    }
+    
+    .Recommendations {
+        display: inline-block;
+    }
+
+    .Recommendations .btnLog {
+        font-size: 22px;
+    }
+    
+    .Service_Wrap {
+        display: block;
+    }
+    
+    .Service_Item {
+        margin-bottom: 10px;
+    }
+
+    .slide-content {
+        display: block;
+    }
+    
+    .menu {
+        flex-wrap: wrap ;
+    }
+
+}
+
+/* Ẩn nút menu-toggle khi màn hình từ tablet trở lên */
+@media (min-width: 810px) {
+    .menu-toggle {
+        display: none; /* Ẩn nút toggle khi màn hình lớn hơn hoặc bằng 768px */
+    }
+
+    .navigation {
+        display: flex; /* Hiển thị menu điều hướng mặc định */
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+    }
+}

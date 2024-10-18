@@ -227,7 +227,7 @@
 }
 
 .Service_Wrap {
-   width: 100%;
+   max-width: 100%;
    display: grid;
    grid-template-columns: repeat(3,1fr);
    place-content: center;

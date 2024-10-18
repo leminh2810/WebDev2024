@@ -9,7 +9,8 @@ function loadHeader() {
                 console.log('script.js loaded successfully');
                 setupServicesLink();
                 setHeaderClass();
-                LoginSet();  // Now this is called after the header is loaded
+                LoginSet();  
+                setupMenuToggle(); // Gọi setupMenuToggle sau khi header đã được tải
             };
             document.body.appendChild(script);
         })
@@ -73,6 +74,8 @@ function setHeaderClass() {
         console.error('Header element not found');
     }
 }
+
+
 function LoginSet(){
         const wrapper = document.querySelector('.wrapper');
         const loginLink = document.querySelector('.login-link');
@@ -115,5 +118,40 @@ function LoginSet(){
 }
 document.addEventListener('DOMContentLoaded', function() {
     loadHeader();
-    setupScrollListener();
+    setupScrollListener(); // Thiết lập scroll listener
 });
+
+function setupMenuToggle() {
+    const toggleButton = document.querySelector('.menu-toggle'); // Tìm nút toggle
+    const navigation = document.querySelector('.navigation'); // Tìm nav
+
+    if (toggleButton && navigation) { // Đảm bảo các phần tử này tồn tại
+        toggleButton.addEventListener('click', () => {
+            console.log('Menu toggle clicked');
+            navigation.classList.toggle('active'); // Thêm/xóa class 'active'
+        });
+    } else {
+        console.error('Menu toggle button or navigation element not found');
+    }
+    window.addEventListener("scroll", function() {
+        var header = document.querySelector("header");
+        var dropdownContent = document.querySelector(".dropdown-content");
+        if (!header || !dropdownContent) return; // Exit if elements don't exist
+
+        var viewportHeight = window.innerHeight;
+
+        if (window.scrollY > viewportHeight * 0.75) {
+            header.classList.add("sticky");
+            dropdownContent.style.backgroundColor = "#e73b05";
+        } else {
+            header.classList.remove("sticky"); 
+            if (!document.body.classList.contains('header')) {
+                dropdownContent.style.backgroundColor = "#e73b05";
+            } else {
+                dropdownContent.style.backgroundColor = "transparent";
+            }
+            dropdownContent.style.color = "white";
+        }
+    });
+}
+

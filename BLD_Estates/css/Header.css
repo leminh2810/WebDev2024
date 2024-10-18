@@ -63,7 +63,7 @@ header.sticky .navigation .btnLog:hover{
 }
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: flex;
 }
 
 .dropdown {
@@ -112,3 +112,5 @@ header.others-header {
 #services-link{
     cursor:pointer;
 }
+
+
