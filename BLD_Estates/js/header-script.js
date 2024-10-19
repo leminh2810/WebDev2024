@@ -133,25 +133,5 @@ function setupMenuToggle() {
     } else {
         console.error('Menu toggle button or navigation element not found');
     }
-    window.addEventListener("scroll", function() {
-        var header = document.querySelector("header");
-        var dropdownContent = document.querySelector(".dropdown-content");
-        if (!header || !dropdownContent) return; // Exit if elements don't exist
-
-        var viewportHeight = window.innerHeight;
-
-        if (window.scrollY > viewportHeight * 0.75) {
-            header.classList.add("sticky");
-            dropdownContent.style.backgroundColor = "#e73b05";
-        } else {
-            header.classList.remove("sticky"); 
-            if (!document.body.classList.contains('header')) {
-                dropdownContent.style.backgroundColor = "#e73b05";
-            } else {
-                dropdownContent.style.backgroundColor = "transparent";
-            }
-            dropdownContent.style.color = "white";
-        }
-    });
 }
 

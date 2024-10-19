@@ -102,7 +102,7 @@ body {
         padding: 20px 0;
     }
 
-    /* Hiển thị menu khi nhấn vào nút toggle */
+    
     .navigation.active {
         display: inline-block;
         background-color: inherit;
