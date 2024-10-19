@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/Header.css">
     <link rel="stylesheet" href="./css/responsive.css">
-
+    <link rel="stylesheet" href="./css/Header.css">
+    <link rel="icon" type="image/x-icon" href="./img/icons96.png" class="home-icon">
 </head>
-<header id="main-header">
-    <h2 class="WebLogo">
-        <img src="img/bld-logo.png" alt="Web Logo">
-    </h2>
-    <nav class="navigation">
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <div class="dropdown">
-            <a id='services-link'>Services</a>
-            <div class="dropdown-content">
-                <a href="buy_rent.html?option=buy">Buy</a>
-                <a href="buy_rent.html?option=rent">Rent</a>
-                <a href="sell.html">Sell</a>
+<body>
+    <header id="main-header">
+        <h2 class="WebLogo">
+            <img src="img/bld-logo.png" alt="Web Logo">
+        </h2>
+        <button id="mobile-menu" class="menu-toggle">
+            <ion-icon name="menu" alt="Menu" ></ion-icon>
+        </button>
+        <nav class="navigation">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <a id="services-link">Services</a>
+                <div class="dropdown-content">
+                    <a href="buy_rent.html?option=buy">Buy</a>
+                    <a href="buy_rent.html?option=rent">Rent</a>
+                    <a href="sell.html">Sell</a>
+                </div>
             </div>
-        </div>
-        <a href="contact.html">Contact</a>
-        <button class="btnLog">Login</button>
-    </nav>
-    <script src="./js/script.js"></script>
-</header>
+            <a href="contact.html">Contact</a>
+            <button class="btnLog">Login</button>
+        </nav>
+        <script src="./js/header-script.js"></script>
+    </header>
+    <div id="header-container"></div>
+</body>
+</html>

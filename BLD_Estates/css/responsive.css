@@ -154,6 +154,49 @@ body {
         flex-wrap: wrap ;
     }
 
+    .Footer{
+        max-width: fit-content;
+        background-color: #171b2a;
+        margin-bottom: 0 !important;
+        margin-top: 10%;
+    }
+
+    .Footer_wrap {
+        height: 100%;
+        max-width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .Footer_end{
+        height: 400px;
+        display: contents;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 5px;
+        color: var(--white-stoke);
+    }
+
+    .Footer_end ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0%;
+
+    }
+    .FLogo{
+        width: 100%;
+        display: block;
+        justify-content: flex-start;
+        align-items: start;
+        font-size: 1.8rem;
+    
+    }
+
 }
 
 /* Ẩn nút menu-toggle khi màn hình từ tablet trở lên */
