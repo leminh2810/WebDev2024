@@ -66,9 +66,9 @@ function setHeaderClass() {
     const header = document.querySelector('header');
     if (header) {
         if (!document.body.classList.contains('Home')) {
-            header.classList.add('sticky');
+            header.classList.add('others-header');
         } else {
-            header.classList.remove('sticky');
+            header.classList.remove('others-header');
         }
     } else {
         console.error('Header element not found');

@@ -97,9 +97,18 @@ header.sticky .navigation .btnLog:hover{
     background-color: transparent;
 }
 
-/* .sticky .navigation .dropdown .dropdown-content {
+header.others-header {
+    padding: 5px 100px;
+    background-color: #e73b05; 
+}
+.others-header .navigation .btnLog:hover {
+    background-color: var(--white-stoke);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.others-header .navigation .dropdown .dropdown-content {
     background-color: var(--primary-color);
-} */
+}
 
 #services-link{
     cursor:pointer;
