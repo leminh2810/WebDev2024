@@ -15,6 +15,7 @@ Student Info
 * **Lê Hoài Nam				22BI13321	namlh.22bi13321@usth.edu.vn**
 * **Nguyễn Hoàng Minh			22BI13291	minhnh.22bi13291@usth.edu.vn**
 * **Nguyễn Duy Nghĩa			22BI13331	nghiand.22bi13331@usth.edu.vn**
+* **Trần Nguyên Phong 			BI12-347	phongtn.bi12-347@st.usth.edu.vn**
 
 * Group ID: 10
 * Project Name: Real Estate Listings Website

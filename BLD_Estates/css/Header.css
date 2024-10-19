@@ -50,6 +50,7 @@ header.sticky .navigation .btnLog:hover{
     background: transparent;
     border: 2px solid;
     outline: none;
+    align-items: center;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
@@ -96,9 +97,9 @@ header.sticky .navigation .btnLog:hover{
     background-color: transparent;
 }
 
-.sticky .navigation .dropdown .dropdown-content {
+/* .sticky .navigation .dropdown .dropdown-content {
     background-color: var(--primary-color);
-}
+} */
 
 #services-link{
     cursor:pointer;
